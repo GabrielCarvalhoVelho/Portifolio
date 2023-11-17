@@ -1,0 +1,62 @@
+body {
+    padding: 16px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.cabecalho {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho img {
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.conteudoCabecalho {
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.conteudoCabecalho h1 {
+    font-size: 36px;
+}
+
+.projetos {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap; /* permite que os projetos quebrem para a próxima linha quando não há espaço suficiente */
+    justify-content: space-around;
+}
+
+.projetos .projeto {
+    border: 1px solid black;
+    width: 300px;
+    margin: 16px; /* espaço entre os projetos */
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.projetos .projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .projetos .projeto {
+        width: 45%; /* dois projetos por linha em telas de até 1200px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projetos .projeto {
+        width: 100%; /* um projeto por linha em telas de até 768px */
+    }
+}
