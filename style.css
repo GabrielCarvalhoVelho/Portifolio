@@ -29,25 +29,53 @@ body {
 .projetos {
     border: 1px solid black;
     display: flex;
-    flex-wrap: wrap; /* permite que os projetos quebrem para a próxima linha quando não há espaço suficiente */
+    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 16px;
 }
 
 .projetos .projeto {
     border: 1px solid black;
-    width: 300px;
-    margin: 16px; /* espaço entre os projetos */
+    flex: 1;
+    margin: 0 16px;
+    height: fit-content;
     text-align: center;
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .projetos .projeto img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 16px;
 }
+
+
+.contato {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contato p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contato a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 1200px) {
     .projetos .projeto {
